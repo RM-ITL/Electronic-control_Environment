@@ -1,7 +1,7 @@
 # ITL战队电控环境配置
 
 <p align="center">
-  <img src="[https://github.com/user-attachments/assets/10c7fa70-a33d-4cd1-be51-909744ea8b0f](https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-08-08_133219_648.jpg)" width="100">
+  <img src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/微信图片_2025-08-08_133219_648.jpg?raw=true" width="100">
 </p>
 
 ## 序言：
