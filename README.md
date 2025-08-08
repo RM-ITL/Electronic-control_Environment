@@ -128,16 +128,16 @@
 ### 这套工具好处在与还能进行调试
 - 点击左侧栏的调试，这里我选择DAP进行无线调试
 - <img width="546" height="366" alt="Snipaste_2025-08-08_16-46-31" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-46-31.png" />
-- <img width="1158" height="725" alt="屏幕截图 2025-08-08 164544" src="https://github.com/user-attachments/assets/ac1a483e-5b35-4f3e-80c2-3f34f2376193" />
+- <img width="1158" height="725" alt="屏幕截图 2025-08-08 164544" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-08%20164544.png" />
 - 这里我选择r这个变量，鼠标右键把它加入监视
-- <img width="955" height="938" alt="屏幕截图 2025-08-08 164844" src="https://github.com/user-attachments/assets/35c977eb-e250-4293-94fd-c7553dbe8ac2" />
+- <img width="955" height="938" alt="屏幕截图 2025-08-08 164844" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-08%20164844.png" />
 - 同时我在这里打一个断点，鼠标左边点一下就行
-- <img width="789" height="325" alt="Snipaste_2025-08-08_16-49-56" src="https://github.com/user-attachments/assets/85bea602-8d2b-47bf-a0c1-3e85cfa16efc" />
+- <img width="789" height="325" alt="Snipaste_2025-08-08_16-49-56" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-49-56.png" />
 - 现在r为5，我运行一下，可以看到r变为了7，符合代码逻辑
-- <img width="490" height="271" alt="Snipaste_2025-08-08_16-52-18" src="https://github.com/user-attachments/assets/04d259d6-58b9-4545-8012-923dc4e23674" />
-- <img width="490" height="271" alt="Snipaste_2025-08-08_16-52-18" src="https://github.com/user-attachments/assets/8ff46946-03aa-48a9-b411-80a758c86e1c" />
+- <img width="490" height="271" alt="Snipaste_2025-08-08_16-52-18" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-52-18.png" />
+- <img width="490" height="271" alt="Snipaste_2025-08-08_16-52-18" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-52-18.png" />
 -如果我想要进行动态显示，只需要把r加入下面的cortex live watch里，我把断点取消，你会看到r一直在改变
-- <img width="379" height="363" alt="Snipaste_2025-08-08_16-54-52" src="https://github.com/user-attachments/assets/b9c6a5aa-17b8-4417-a3cf-c120a9dab31b" />
+- <img width="379" height="363" alt="Snipaste_2025-08-08_16-54-52" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-54-52.png" />
 
 ## 五、写在最后
 - jlink烧录和下载还没有实现，目前有些问题，等我解决后更新
