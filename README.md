@@ -135,7 +135,7 @@
 - <img width="789" height="325" alt="Snipaste_2025-08-08_16-49-56" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-49-56.png" />
 - 现在r为5，我运行一下，可以看到r变为了7，符合代码逻辑
 - <img width="490" height="271" alt="Snipaste_2025-08-08_16-52-18" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-52-18.png" />
-- <img width="490" height="271" alt="Snipaste_2025-08-08_16-52-18" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-52-18.png" />
+- <img width="490" height="271" alt="Snipaste_2025-08-08_16-53-04" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-53-04.png" />
 -如果我想要进行动态显示，只需要把r加入下面的cortex live watch里，我把断点取消，你会看到r一直在改变
 - <img width="379" height="363" alt="Snipaste_2025-08-08_16-54-52" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-54-52.png" />
 
