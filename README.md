@@ -36,19 +36,19 @@
 - <img width="470" height="250" alt="屏幕截图 2025-08-08 140936" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-08%20140936.png" />
 像这样。
 - 复制完后打开设置，搜索编辑系统环境变量，点击进入
-- <img width="470" height="250" alt="屏幕截图 2025-08-08 141158" src="https://github.com/user-attachments/assets/ec8ea428-fcb1-4032-b7ed-342e0543ef87" />
+- <img width="470" height="250" alt="屏幕截图 2025-08-08 141158" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-08%20141158.png" />
 - 进入后出现如下页面，点击环境变量进入
-- <img width="374" height="418" alt="Snipaste_2025-08-08_14-14-52" src="https://github.com/user-attachments/assets/58fc2115-1f61-4bcf-8e91-44903ff5af22" />
+- <img width="374" height="418" alt="Snipaste_2025-08-08_14-14-52" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-14-52.png" />
 - 进入后出现如下页面，点击path进入
-- <img width="470" height="250" alt="Snipaste_2025-08-08_14-15-14" src="https://github.com/user-attachments/assets/7e8e4f00-6cc2-4b97-bce9-e7b54be89e68" />
+- <img width="470" height="250" alt="Snipaste_2025-08-08_14-15-14" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-15-14.png" />
 - 进入后出现如下页面，点击右上角的新键，把刚刚的路径复制进去，复制完后记得点确定。
-- <img width="411" height="398" alt="Snipaste_2025-08-08_14-15-36" src="https://github.com/user-attachments/assets/74baa5b5-3f71-4317-b9c9-84827419a59e" />
+- <img width="411" height="398" alt="Snipaste_2025-08-08_14-15-36" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-15-36.png" />
 - 同理分别复制arm-gnu-toolchainde的bin路径和openocd的bin路径到环境变量里，ninja只需要打开文件夹后复制路径就行，这样你就有这几个路径了：
-- <img width="414" height="281" alt="Snipaste_2025-08-08_14-25-57" src="https://github.com/user-attachments/assets/d9c70fef-0a1c-42cd-bcf4-4783c2e558f3" />
+- <img width="414" height="281" alt="Snipaste_2025-08-08_14-25-57" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-25-57.png" />
 
 ### 验证工具是否配置成功：win+R打开命令端，进入
-- <img width="313" height="161" alt="Snipaste_2025-08-08_14-28-13" src="https://github.com/user-attachments/assets/6d3ff1b7-1e36-4906-a4a8-80046b91896e" />
-- <img width="500" height="300" alt="Snipaste_2025-08-08_14-29-22" src="https://github.com/user-attachments/assets/0189880d-18b9-4c2c-98b7-7058e476128d" />
+- <img width="313" height="161" alt="Snipaste_2025-08-08_14-28-13" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-28-13.png" />
+- <img width="500" height="300" alt="Snipaste_2025-08-08_14-29-22" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-29-22.png" />
 -在命令行里依次输入，输入完一条命令后点一次回车
 - cmake --version
 - ninja --version
