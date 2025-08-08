@@ -117,17 +117,17 @@
 - <img width="113" height="177" alt="Snipaste_2025-08-08_16-33-41" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-33-41.png" />
 - 最后可以看到此时已经成功烧录，妙板点灯成功
 - <img width="327" height="172" alt="Snipaste_2025-08-08_16-34-55" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-34-55.png" />
-- ![微信图片_2025-08-08_164437_176](https://github.com/user-attachments/assets/6e0c4169-757f-4df1-8e7d-d7bdb4d93938)
+- ![微信图片_2025-08-08_164437_176](https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_2025-08-08_164437_176.jpg)
 
 - 如果需要自己添加文件夹,.c和.h文件需要做一些操作包含目录。首先打开主CMakeLists.txt,找到如下图所示位置
-- <img width="740" height="308" alt="Snipaste_2025-08-08_16-37-58" src="https://github.com/user-attachments/assets/4995702f-78b0-4045-80e3-5738fba8e893" />
+- <img width="740" height="308" alt="Snipaste_2025-08-08_16-37-58" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-37-58.png" />
 - 我现在就自己添加了一个BSP文件夹和bsp_led.c和bsp_led.h文件，所以我的这里需要做相应改变，如下图
-- <img width="472" height="314" alt="Snipaste_2025-08-08_16-38-33" src="https://github.com/user-attachments/assets/58a84a62-fe77-401a-9fc3-dbb781408552" />
+- <img width="472" height="314" alt="Snipaste_2025-08-08_16-38-33" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-38-33.png" />
 
 ## 四、调试
 ### 这套工具好处在与还能进行调试
 - 点击左侧栏的调试，这里我选择DAP进行无线调试
-- <img width="546" height="366" alt="Snipaste_2025-08-08_16-46-31" src="https://github.com/user-attachments/assets/6bbc7161-f1fc-4d96-a8ee-8fcabc93b231" />
+- <img width="546" height="366" alt="Snipaste_2025-08-08_16-46-31" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-46-31.png" />
 - <img width="1158" height="725" alt="屏幕截图 2025-08-08 164544" src="https://github.com/user-attachments/assets/ac1a483e-5b35-4f3e-80c2-3f34f2376193" />
 - 这里我选择r这个变量，鼠标右键把它加入监视
 - <img width="955" height="938" alt="屏幕截图 2025-08-08 164844" src="https://github.com/user-attachments/assets/35c977eb-e250-4293-94fd-c7553dbe8ac2" />
