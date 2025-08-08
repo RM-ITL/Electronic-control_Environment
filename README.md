@@ -125,7 +125,7 @@
 - <img width="472" height="314" alt="Snipaste_2025-08-08_16-38-33" src="https://github.com/user-attachments/assets/58a84a62-fe77-401a-9fc3-dbb781408552" />
 
 ## 四、调试
-###这套工具好处在与还能进行调试
+### 这套工具好处在与还能进行调试
 - 点击左侧栏的调试，这里我选择DAP进行无线调试
 - <img width="546" height="366" alt="Snipaste_2025-08-08_16-46-31" src="https://github.com/user-attachments/assets/6bbc7161-f1fc-4d96-a8ee-8fcabc93b231" />
 - <img width="1158" height="725" alt="屏幕截图 2025-08-08 164544" src="https://github.com/user-attachments/assets/ac1a483e-5b35-4f3e-80c2-3f34f2376193" />
