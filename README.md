@@ -33,7 +33,7 @@
 ## 二、环境搭建
 ### 下载并解压好这些工具，下面进行环境搭建：
 - 打开cmake这个文件夹，找到bin这个文件夹，进入，点击上方复制该路径：
-- <img width="470" height="250" alt="屏幕截图 2025-08-08 140936" src="https://github.com/user-attachments/assets/730551df-05fa-43f8-b5c0-119ea43563d7" />
+- <img width="470" height="250" alt="屏幕截图 2025-08-08 140936" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-08%20140936.png" />
 像这样。
 - 复制完后打开设置，搜索编辑系统环境变量，点击进入
 - <img width="470" height="250" alt="屏幕截图 2025-08-08 141158" src="https://github.com/user-attachments/assets/ec8ea428-fcb1-4032-b7ed-342e0543ef87" />
