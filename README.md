@@ -90,33 +90,33 @@
 -配置完基本的东西后，去Project Manager生成工程，这里Toolchain选择CMake，后生成工程。
 - <img width="1082" height="646" alt="Snipaste_2025-08-08_15-28-20" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_15-28-20.png" />
 - 生成工程后找到这个工程，点击进入，进入后将下载的.vscode文件夹和update_config.sh复制放到里面，像这样：
-- <img width="407" height="258" alt="Snipaste_2025-08-08_15-58-23" src="https://github.com/user-attachments/assets/27bc2805-eaed-4f23-9999-d13ff63ac150" />
+- <img width="407" height="258" alt="Snipaste_2025-08-08_15-58-23" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_15-58-23.png" />
 - 后点击鼠标右键，选择显示更多选项，进入后如下图，选择用vscode打开（有些人这里可能没有这个选项，我后面会写解决方法）
-- <img width="861" height="419" alt="屏幕截图 2025-08-08 153249" src="https://github.com/user-attachments/assets/a537e1cf-c85c-4617-a495-bdd8ef96a4cd" />
+- <img width="861" height="419" alt="屏幕截图 2025-08-08 153249" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-08%20153249.png" />
 - 用vscode打开后等一会，直到你左下角出现如下图按键：
-- <img width="404" height="99" alt="Snipaste_2025-08-08_16-01-48" src="https://github.com/user-attachments/assets/e4a76579-a8ed-4dbe-86b2-4c709944926c" />
+- <img width="404" height="99" alt="Snipaste_2025-08-08_16-01-48" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-01-48.png" />
 - 你打开.vscode文件夹，找到c_cpp_properties.json，把下图的路径改为你自己工具链的路径
-- <img width="1217" height="488" alt="Snipaste_2025-08-08_16-06-32" src="https://github.com/user-attachments/assets/bb8b9c88-a862-4161-aaa6-13db0b6cc418" />
+- <img width="1217" height="488" alt="Snipaste_2025-08-08_16-06-32" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-06-32.png" />
 - 这个路径需要你打开之前的arm-gnu-toolchain,找到bin文件夹，再打开找到arm-none-eabi-gcc.exe，点击右键复制路径，将路径替换原来路径。这里要注意"",复制的路径自带双引号，还有注意\要改为/
-- <img width="1166" height="763" alt="屏幕截图 2025-08-08 160941" src="https://github.com/user-attachments/assets/a313dda6-1787-47dd-b98f-b99f10d334bc" />
+- <img width="1166" height="763" alt="屏幕截图 2025-08-08 160941" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-08%20160941.png" />
 - 此时你的侧面栏应该类似这样，打开update_config.sh
-- <img width="201" height="559" alt="Snipaste_2025-08-08_16-02-46" src="https://github.com/user-attachments/assets/962d2b40-f8f4-4d61-a576-8d18ed750681" />
+- <img width="201" height="559" alt="Snipaste_2025-08-08_16-02-46" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-02-46.png" />
 - update_config.sh是一个脚本它会将你的.vsocde文件夹里的所有文件改为适应你当前工程的文件，按照这个文件开头写的方法使用就行，举个例子：
 - launch.json红框里的这部分是错误的，因为我用的是妙板，应该是stm32h7x.cfg,现在我使用这个脚本
-- <img width="741" height="567" alt="Snipaste_2025-08-08_16-16-36" src="https://github.com/user-attachments/assets/54553a57-faea-4833-ad13-5383aecfe6b0" />
+- <img width="741" height="567" alt="Snipaste_2025-08-08_16-16-36" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-16-36.png" />
 - ctrl+esc下面那个键打开终端输入执行脚本命令后出现下图
-- <img width="480" height="441" alt="Snipaste_2025-08-08_16-20-38" src="https://github.com/user-attachments/assets/7f9cdcdb-0bb5-4111-aba1-737975731706" />
-- <img width="480" height="221" alt="Snipaste_2025-08-08_16-21-54" src="https://github.com/user-attachments/assets/8d4369d1-a242-4d0b-a452-649a3fdb181a" />
-- <img width="347" height="110" alt="Snipaste_2025-08-08_16-22-18" src="https://github.com/user-attachments/assets/725e2063-22e0-4b96-89c4-1a06469f6aa6" />
-- <img width="386" height="299" alt="Snipaste_2025-08-08_16-24-24" src="https://github.com/user-attachments/assets/22052e55-c96f-4220-a6ce-24894b6d1120" />
+- <img width="480" height="441" alt="Snipaste_2025-08-08_16-20-38" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-20-38.png" />
+- <img width="480" height="221" alt="Snipaste_2025-08-08_16-21-54" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-21-54.png" />
+- <img width="347" height="110" alt="Snipaste_2025-08-08_16-22-18" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-22-18.png" />
+- <img width="386" height="299" alt="Snipaste_2025-08-08_16-24-24" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-24-24.png" />
 - 我们可以看到错误已经被自动修改（这其实也不能说是完全意义上的错误修改，而且自动适应当前工程，它只会去看芯片名和工程名是不是与当前一致，别的错误不会改）
 - 此时让我们再看到左下角几个按键，下图是它对应的作用，其中configure生成工程后只需要按一次就可以了，后面不需要重复使用，除非你把build文件夹删了
-- <img width="423" height="326" alt="Snipaste_2025-08-08_16-29-53" src="https://github.com/user-attachments/assets/f0ceb60b-7536-4baa-a024-3dd543c4b315" />
+- <img width="423" height="326" alt="Snipaste_2025-08-08_16-29-53" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-29-53.png" />
 - 现在我依次点击configure,build,flask(dap)进行工程的配置，编译，烧录
 - 配置完后会多一个build文件夹
-- <img width="113" height="177" alt="Snipaste_2025-08-08_16-33-41" src="https://github.com/user-attachments/assets/bbca1c64-c8d8-46cf-971c-15741a6fde5f" />
+- <img width="113" height="177" alt="Snipaste_2025-08-08_16-33-41" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-33-41.png" />
 - 最后可以看到此时已经成功烧录，妙板点灯成功
-- <img width="327" height="172" alt="Snipaste_2025-08-08_16-34-55" src="https://github.com/user-attachments/assets/e13d0c7e-bea0-44ef-8d3e-270f6b939ab7" />
+- <img width="327" height="172" alt="Snipaste_2025-08-08_16-34-55" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-34-55.png" />
 - ![微信图片_2025-08-08_164437_176](https://github.com/user-attachments/assets/6e0c4169-757f-4df1-8e7d-d7bdb4d93938)
 
 - 如果需要自己添加文件夹,.c和.h文件需要做一些操作包含目录。首先打开主CMakeLists.txt,找到如下图所示位置
