@@ -55,11 +55,11 @@
 - arm-none-eabi-gcc --version
 - openocd.exe --version
 - 如果有哪一个工具没有配置好，则不会出现对应的版本号。如果你最后出现了所有工具的版本号，恭喜你顺利配置好工具🎉🎉🎉：
-- <img width="470" height="250" alt="Snipaste_2025-08-05_11-56-34" src="https://github.com/user-attachments/assets/235d27cd-724c-4208-a1c3-adad3a8040ca" />
+- <img width="470" height="250" alt="Snipaste_2025-08-05_11-56-34" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-05_11-56-34.png" />
 
 ### 进行软件的配置，这里只进行vscode的配置教学，Git Bash安装方法去自行网上搜索
 - 打开vscode，再打开插件
-- <img width="620" height="300" alt="Snipaste_2025-08-08_14-42-40" src="https://github.com/user-attachments/assets/c9f0ec42-ad84-4a7f-a806-bf1442eeb567" />
+- <img width="620" height="300" alt="Snipaste_2025-08-08_14-42-40" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-42-40.png" />
 -你需要下载如下插件：
 - C/C++(C/C++ Extension Pack, C/C++ Themes这两个插件想下载就下载，不想下载也可以不下载)
 - CMake
@@ -67,18 +67,18 @@
 - Chinese (Simplified) (简体中文) Language Pack for Visual Studio Code(英语好的可以不用下载)
 - Cortex-Debug
 - Task Buttons
-- <img width="576" height="384" alt="Snipaste_2025-08-08_14-49-31" src="https://github.com/user-attachments/assets/10fc9744-30c1-46f3-80c0-a7a1b3bedd00" />
-- <img width="578" height="54" alt="Snipaste_2025-08-08_14-49-47" src="https://github.com/user-attachments/assets/7c8c8ef5-1a4f-47f3-af17-a10ddca4ef53" />
+- <img width="576" height="384" alt="Snipaste_2025-08-08_14-49-31" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-49-31.png" />
+- <img width="578" height="54" alt="Snipaste_2025-08-08_14-49-47" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-49-47.png" />
 - 安装完插件后重新启动一下vscode，左下角进入点一下齿轮图标，再进入设置
-- <img width="500" height="400" alt="屏幕截图 2025-08-08 150008" src="https://github.com/user-attachments/assets/cce7303d-b9d8-4dfe-b472-01e14349d01f" />
+- <img width="500" height="400" alt="屏幕截图 2025-08-08 150008" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-08-08%20150008.png" />
 - 进入设置后搜索font,如下图，你可以在这里改变字体大小
-- <img width="1052" height="616" alt="Snipaste_2025-08-08_14-57-37" src="https://github.com/user-attachments/assets/f428bf60-5252-40f8-a4b7-0b13b7df38d3" />
+- <img width="1052" height="616" alt="Snipaste_2025-08-08_14-57-37" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-57-37.png" />
 - 搜索zoom，打开后可以进行ctrl+鼠标滚轮缩放字体
-- <img width="1058" height="578" alt="Snipaste_2025-08-08_14-58-03" src="https://github.com/user-attachments/assets/667e17e4-3872-4651-9c25-b7034a38c435" />
+- <img width="1058" height="578" alt="Snipaste_2025-08-08_14-58-03" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-58-03.png" />
 - 搜索compact,打开
-- <img width="1061" height="576" alt="Snipaste_2025-08-08_14-57-20" src="https://github.com/user-attachments/assets/cdb62769-481c-4750-872c-06a92d7fade2" />
+- <img width="1061" height="576" alt="Snipaste_2025-08-08_14-57-20" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-57-20.png" />
 - 搜索default terminal, 如图选择Git Bash
-- <img width="1059" height="656" alt="Snipaste_2025-08-08_14-59-31" src="https://github.com/user-attachments/assets/d9c3a6ef-86a4-4f90-b844-99a5c9eb30ed" />
+- <img width="1059" height="656" alt="Snipaste_2025-08-08_14-59-31" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-59-31.png" />
 ### 到这里环境就配置的差不多了，接下来就是工具的使用
 
 ## 三、工具使用
@@ -88,7 +88,7 @@
 
 ### 首先使用STM32CUBENX进行工程配置，这里我配置一个妙板点灯作为例子
 -配置完基本的东西后，去Project Manager生成工程，这里Toolchain选择CMake，后生成工程。
-- <img width="1082" height="646" alt="Snipaste_2025-08-08_15-28-20" src="https://github.com/user-attachments/assets/3ee86bbf-97ea-4c04-9272-587c47b22013" />
+- <img width="1082" height="646" alt="Snipaste_2025-08-08_15-28-20" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_15-28-20.png" />
 - 生成工程后找到这个工程，点击进入，进入后将下载的.vscode文件夹和update_config.sh复制放到里面，像这样：
 - <img width="407" height="258" alt="Snipaste_2025-08-08_15-58-23" src="https://github.com/user-attachments/assets/27bc2805-eaed-4f23-9999-d13ff63ac150" />
 - 后点击鼠标右键，选择显示更多选项，进入后如下图，选择用vscode打开（有些人这里可能没有这个选项，我后面会写解决方法）
