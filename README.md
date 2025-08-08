@@ -26,7 +26,7 @@
 - openocd
 - 这些工具我都放到了这个网盘链接里，大家可以在这里下载https://pan.baidu.com/s/18mWA-K26kCKKWWBVhJbilA?pwd=ITL0 提取码: ITL0 
 - 下载完这些后我建议你新建一个Toolchain文件夹，把它们都放到这个文件夹里面。然后这个文件夹建议你放到一个不容易动的位置，不要去改变它的位置，像我这样：
-- <img width="470" height="250" alt="Snipaste_2025-08-08_14-04-07" src="[https://github.com/user-attachments/assets/e5dbcfc8-a677-46cc-87e9-71fc5deb3070" /](https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-04-07.png)>。
+- <img width="470" height="250" alt="Snipaste_2025-08-08_14-04-07" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_14-04-07.png">。
   
 ### 你还需要下载vscode、STM32CUBEMX、Git Bash这三个软件请大家自行下载，切记STM32CUBEMX不要下载最新版本，可能会有些bug存在。
 
