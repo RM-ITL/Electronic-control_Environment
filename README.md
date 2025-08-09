@@ -127,7 +127,7 @@
 ## 六、更新
 ### 已更新jlink烧录和调试
 - 需要将更新后的.vscode文件夹、flash.jlink和update_config.sh下载好复制到工程里，然后你还需要在主CMakeLists.txt的最后加上CMake.txt文件里的一段话，否则将无法烧录
-- 
+- <img width="490" height="300" alt="Snipaste_2025-08-09_08-47-28" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-09_08-47-28.png" />
 
 ## 四、调试
 ### 这套工具好处在与还能进行调试
