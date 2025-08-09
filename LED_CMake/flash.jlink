@@ -1,0 +1,27 @@
+// 设置J-Link设备
+device = STM32F407IG
+
+// 连接目标设备
+connect
+
+// 检查目标设备是否连接成功
+r
+
+// 只擦除需要的扇区，擦除前64KB应该足够大多数应用
+erase 0x08000000 0x08010000
+
+// 启用快速闪存下载模式
+exec EnableFlashDL
+
+// 加载程序文件，使用bin格式通常更快
+loadfile ./build/LED_CMake_C.bin 0x08000000
+
+// 禁用快速闪存下载模式
+exec DisableFlashDL
+
+// 复位并运行
+r
+g
+
+// 退出J-Link
+exit

@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "STM32H723",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE",
+                "USE_HAL_DRIVER", 
+                "STM32H723xx"
+            ],
+            "compilerPath": "D:/MY_SOFT/Toolchain/gcc/arm-gnu-toolchain-14.3.rel1-mingw-w64-i686-arm-none-eabi/bin/arm-none-eabi-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-arm"
+        }
+    ],
+    "version": 4
+}
