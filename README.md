@@ -145,7 +145,8 @@
 - <img width="379" height="363" alt="Snipaste_2025-08-08_16-54-52" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-54-52.png" />
 
 ## 五、写在最后
-- jlink烧录和下载还没有实现，目前有些问题，等我解决后更新
+- jlink烧录和下载已经更新
+- 用别人工程前先把他的build文件夹删除，重新生成，不然会出现路径错误问题
 - 因为我也刚学不久，有些地方可能有bug或不足，欢迎及时和我反馈QQ:3305708832
 - 感谢B站大佬linkyourbin，ControlCoreX,大家如果想了解更多关于工具链的知识可以看https://b23.tv/k3Q2581和https://b23.tv/gj3xWhn
 
