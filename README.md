@@ -13,7 +13,7 @@
 - [三、工具使用](#三工具使用)
 - [四、调试](#四调试)
 - [五、写在最后](#五写在最后)
-
+- [六、更新](#六更新)
 ...
 
 ## 一、开发工具
@@ -123,6 +123,11 @@
 - <img width="740" height="308" alt="Snipaste_2025-08-08_16-37-58" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-37-58.png" />
 - 我现在就自己添加了一个BSP文件夹和bsp_led.c和bsp_led.h文件，所以我的这里需要做相应改变，如下图
 - <img width="472" height="314" alt="Snipaste_2025-08-08_16-38-33" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-38-33.png" />
+
+## 六、更新
+### 已更新jlink烧录和调试
+- 需要将更新后的.vscode文件夹、flash.jlink和update_config.sh下载好复制到工程里，然后你还需要在主CMakeLists.txt的最后加上CMake.txt文件里的一段话，否则将无法烧录
+- 
 
 ## 四、调试
 ### 这套工具好处在与还能进行调试
