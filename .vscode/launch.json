@@ -6,14 +6,14 @@
     "configurations": [
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/LED_CMake.elf",
+            "executable": "build/LED_CMake_C.elf",
             "name": "Debug with OpenOCD(DAP)",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "openocd",
             "configFiles": [
                 "interface/cmsis-dap.cfg",
-                "target/stm32h7x.cfg"
+                "target/stm32f4x.cfg"
             ],
             "searchDir": [],
             "runToEntryPoint": "main",
@@ -26,18 +26,33 @@
         },
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/LED_CMake.elf",
+            "executable": "build/LED_CMake_C.elf",
             "name": "Debug with OpenOCD (ST-Link)",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "openocd",
             "configFiles": [
                 "interface/stlink.cfg",
-                "target/stm32h7x.cfg"
+                "target/stm32f4x.cfg"
             ],
             "searchDir": [],
             "runToEntryPoint": "main",
             "showDevDebugOutput": "none",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            }
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "Debug with JLINK",
+            "servertype": "jlink",
+            "interface": "swd",
+            "executable": "build/LED_CMake_C.elf",
+            "runToEntryPoint": "main",
+            "device": "STM32F407IG",
             "liveWatch": {
                 "enabled": true,
                 "samplesPerSecond": 4

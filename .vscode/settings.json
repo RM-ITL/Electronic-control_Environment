@@ -20,6 +20,11 @@
             "label": "$(chip) Flash(ST-Link)",
             "task": "Flash(ST-Link)",
             "tooltip": "Run Flash(ST-Link) Task"
+        },
+        {
+            "label": "$(chip) Flash(J-Link)",
+            "task": "Flash(J-Link)",
+            "tooltip": "Run Flash(J-Link) Task"
         }
     ]
 }

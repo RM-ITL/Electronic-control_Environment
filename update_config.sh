@@ -68,6 +68,35 @@ get_chip_define_from_cmake() {
     fi
 }
 
+# 根据完整芯片名称获取J-Link设备名称（去掉最后两位）
+get_jlink_device_name() {
+    # 从完整芯片型号中提取J-Link设备名称，去掉最后两位字符
+    if [[ $CHIP_FULL_NAME =~ (STM32[A-Z0-9]+) ]]; then
+        # 提取基本型号并去掉最后两位字符
+        BASE_NAME="${BASH_REMATCH[1]}"
+        # 去掉最后两位字符
+        JLINK_DEVICE="${BASE_NAME%??}"
+        echo "$JLINK_DEVICE"
+    else
+        # 默认处理方式
+        case "$CHIP_SERIES" in
+            "stm32f4")
+                JLINK_DEVICE="STM32F407"
+                ;;
+            "stm32f7")
+                JLINK_DEVICE="STM32F7"
+                ;;
+            "stm32h7")
+                JLINK_DEVICE="STM32H7"
+                ;;
+            *)
+                JLINK_DEVICE="${CHIP_SERIES^^}"
+                ;;
+        esac
+        echo "$JLINK_DEVICE"
+    fi
+}
+
 # 更新c_cpp_properties.json
 update_c_cpp_properties() {
     C_CPP_FILE="$SCRIPT_DIR/.vscode/c_cpp_properties.json"
@@ -126,6 +155,12 @@ update_launch_json() {
     TARGET_CFG="target/${CHIP_SERIES}x.cfg"
     sed -i "s|target/[a-zA-Z0-9]\+\.cfg|$TARGET_CFG|g" "$LAUNCH_FILE"
     
+    # 从完整芯片型号中提取正确的设备名称并更新J-Link配置
+    # 去掉完整型号的最后两位字符，以确保J-Link兼容性
+    JLINK_DEVICE=$(get_jlink_device_name)
+    echo "更新J-Link设备名称为: $JLINK_DEVICE"
+    sed -i "s/\"device\": \"[^\"]*\"/\"device\": \"$JLINK_DEVICE\"/g" "$LAUNCH_FILE"
+    
     # 显示更新后的内容
     echo "更新后的可执行文件路径:"
     grep '"executable"' "$LAUNCH_FILE"
@@ -133,8 +168,40 @@ update_launch_json() {
     echo "更新后的目标配置:"
     grep "target/[a-zA-Z0-9]*\.cfg" "$LAUNCH_FILE"
     
+    echo "更新后的设备名称:"
+    grep '"device"' "$LAUNCH_FILE"
+    
     echo "已更新 $LAUNCH_FILE 中的可执行文件路径为 $ELF_PATH"
     echo "已更新 $LAUNCH_FILE 中的目标配置为 $TARGET_CFG"
+}
+
+# 更新flash.jlink
+update_flash_jlink() {
+    FLASH_FILE="$SCRIPT_DIR/flash.jlink"
+    
+    echo "正在检查 $FLASH_FILE"
+    
+    if [ ! -f "$FLASH_FILE" ]; then
+        echo "未找到 $FLASH_FILE"
+        return 1
+    fi
+    
+    echo "文件存在，开始更新设备名称..."
+    
+    # 显示更新前的内容
+    echo "更新前的设备名称:"
+    grep "device =" "$FLASH_FILE"
+    
+    # 更新flash.jlink中的设备名称
+    JLINK_DEVICE=$(get_jlink_device_name)
+    echo "更新J-Link设备名称为: $JLINK_DEVICE"
+    sed -i "s/device = .*/device = $JLINK_DEVICE/" "$FLASH_FILE"
+    
+    # 显示更新后的内容
+    echo "更新后的设备名称:"
+    grep "device =" "$FLASH_FILE"
+    
+    echo "已更新 $FLASH_FILE 中的设备名称为 $JLINK_DEVICE"
 }
 
 # 更新tasks.json
@@ -188,6 +255,7 @@ main() {
     echo "项目名称: $PROJECT_NAME"
     echo "芯片系列: $CHIP_SERIES"
     echo "芯片定义: $CHIP_DEFINE"
+    echo "芯片型号: $CHIP_FULL_NAME"
     echo "========================"
     
     # 更新配置文件
@@ -198,6 +266,10 @@ main() {
     echo ""
     echo "=== 更新 launch.json ==="
     update_launch_json
+    
+    echo ""
+    echo "=== 更新 flash.jlink ==="
+    update_flash_jlink
     
     echo ""
     echo "=== 更新 tasks.json ==="
