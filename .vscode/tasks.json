@@ -18,12 +18,12 @@
         {
             "label": "CMake Build",
             "type": "shell",
-            "command": "cmake",
+            "command": "ninja",
             "args": [
-                "--build",
-                "build",
-                "--target",
-                "all"
+                "-j",
+                "20",
+                "-C",
+                "build"
             ],
             "group": {
                 "kind": "build",

@@ -18,12 +18,12 @@
         {
             "label": "CMake Build",
             "type": "shell",
-            "command": "cmake",
+            "command": "ninja",
             "args": [
-                "--build",
-                "build",
-                "--target",
-                "all"
+                "-j",
+                "20",
+                "-C",
+                "build"
             ],
             "group": {
                 "kind": "build",
@@ -38,9 +38,9 @@
                 "-f",
                 "interface/cmsis-dap.cfg",
                 "-f",
-                "target/stm32h7x.cfg",
+                "target/stm32f4x.cfg",
                 "-c",
-                "program ./build/LED_CMake.elf verify reset exit"
+                "program ./build/LED_CMake_C.elf verify reset exit"
             ],
             "group": {
                 "kind": "build",
@@ -55,9 +55,9 @@
                 "-f",
                 "interface/stlink.cfg",
                 "-f",
-                "target/stm32h7x.cfg",
+                "target/stm32f4x.cfg",
                 "-c",
-                "program ./build/LED_CMake.elf verify reset exit"
+                "program ./build/LED_CMake_C.elf verify reset exit"
             ],
             "group": {
                 "kind": "build",
@@ -67,10 +67,10 @@
         {
             "label": "Flash(J-Link)",
             "type": "shell",
-            "command": "C:/Users/33057/.eide/tools/jlink/JLink.exe",
+            "command": "D:/RoboMaster/电控/JLink/JLink.exe",
             "args": [
                 "-device",
-                "STM32F407IG",
+                "STM32",
                 "-if",
                 "SWD",
                 "-speed",
