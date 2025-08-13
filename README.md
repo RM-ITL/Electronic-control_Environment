@@ -124,7 +124,6 @@
 - 我现在就自己添加了一个BSP文件夹和bsp_led.c和bsp_led.h文件，所以我的这里需要做相应改变，如下图
 - <img width="472" height="314" alt="Snipaste_2025-08-08_16-38-33" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-38-33.png" />
 
-## 六、更新
 ### 已更新jlink烧录和调试
 - 需要将更新后的.vscode文件夹、flash.jlink和update_config.sh下载好复制到工程里，然后你还需要在主CMakeLists.txt的最后加上CMake.txt文件里的一段话，否则将无法烧录
 - <img width="490" height="300" alt="Snipaste_2025-08-09_08-47-28" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-09_08-47-28.png" />
@@ -144,7 +143,7 @@
 -如果我想要进行动态显示，只需要把r加入下面的cortex live watch里，我把断点取消，你会看到r一直在改变
 - <img width="379" height="363" alt="Snipaste_2025-08-08_16-54-52" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-54-52.png" />
 
-## 五、Git使用和上传代码到github
+## 六、更新：Git使用和上传代码到github
 - 首先在github里创建一个代码仓库
 - <img width="430" height="450" alt="Snipaste_2025-08-13_07-30-27" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-30-27.png" />
 - 点击New后我们可以看到这样的界面，先填入你仓库名字，再给一些介绍，选择仓库是否对外开放（一般选择Public）,是否添加阅读文件（这里我们选择是），是否选择仓库模板(这里我们不选择)，是否选择开源协议（这里我也不选择），然后点击Create repository创建仓库
@@ -161,31 +160,32 @@
 - 然后我们可以看到生成了一个.git文件，看不到的点击查看，打开显示，选择隐藏的项目
 - <img width="470" height="450" alt="屏幕截图 2025-08-13 073829" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-08-13 073829.png" />
 - 我们接下来再把要上传的代码复制到这个文件夹
-- 8
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-39-24" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-39-24.png" />
 - 在git里输入git add .（注意这里字母和.之间有一个空格）
-- 9
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-40-04" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-40-04.png" />
 - 运行完指令后，输入git commit -m "第一次上传代码"，""这里面的内容可以自己随便填写，一般填写的是上传代码更新的内容
-- 10
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-41-05" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-41-05.png" />
 - 运行完后，我们再输入git branch -M main
-- 11
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-41-50" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-41-50.png" />
 - 运行完后，我再输入git remote add origin + 你刚刚复制的链接（这里的粘贴只能通过鼠标右键，ctrl+v没用）
-- 12
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-43-09" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-43-09.png" />
+-  <img width="470" height="450" alt="屏幕截图 2025-08-13 074242" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-08-13 074242.png" />
 - 运行完后，我们再输入git push -u origin main,上传代码到仓库
-- 13
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-43-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-43-45.png" />
 - 然后运行完我们可以看到报错了，这是因为两个仓库内容不一致（因为我们创建仓库时，生成了README.md文件，本地没有）
-- 14
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-45-30" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-45-30.png" />
 - 这里我们输入git pull origin main --allow-unrelated-histories，进行历史版本合并
-- 15
 - 运行完后，会进入这样的界面，我们按一下键盘上的 Esc 键，输入（:wq），按回车，保存并退出。
-- 16
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-51-39" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-51-39.png" />
 - 最后我们再输入git push origin main 即可上传代码
-- 17
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-43-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-43-45.png" />
 - 我们来到网址上刚刚创建的代码仓库，刷新可以看到，上传的代码已经在这里了
-- 18
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-52-45.png" />
 - 如果我们的代码仓库有内容更新了，我们想让本地的也进行更新，可以打开本地的文件夹，一样是Open Git Bash here, 输入git pull origin main
-- 19
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-54-25" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-54-25.png" />
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-55-02" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-55-02.png" />
 - 此时我们可以看到我们的文件已经更新了
-- 20
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-55-33" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-55-33.png" />
 ## 五、写在最后
 - jlink烧录和下载已经更新
 - 用别人工程前先把他的build文件夹删除，重新生成，不然会出现路径错误问题
