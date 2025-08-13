@@ -148,17 +148,18 @@
 - 首先在github里创建一个代码仓库
 - <img width="430" height="450" alt="Snipaste_2025-08-13_07-30-27" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-30-27.png" />
 - 点击New后我们可以看到这样的界面，先填入你仓库名字，再给一些介绍，选择仓库是否对外开放（一般选择Public）,是否添加阅读文件（这里我们选择是），是否选择仓库模板(这里我们不选择)，是否选择开源协议（这里我也不选择），然后点击Create repository创建仓库
-- 2
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-30-49" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-30-49.png" />
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-34-25" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-34-25.png" />
 - 创建完后我们可以看到这样的页面
-- 3
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-34-48" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-34-48.png" />
 - 我们点击右上角的Code，复制仓库链接
-- 4
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-35-23" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-35-23.png" />
 - 接下来我们在本地创建一个文件夹用来放上传仓库的文件
-- 5
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-36-29" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-36-29.png" />
 - 我们进入文件夹，点击鼠标右键选择显示更多选项，然后点击Open Git Bash here，在git里输入git init，然后回车（后面所有指令输入完都是回车运行）
-- 6
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-37-35" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-37-35.png" />
 - 然后我们可以看到生成了一个.git文件，看不到的点击查看，打开显示，选择隐藏的项目
-- 7
+- <img width="470" height="450" alt="屏幕截图 2025-08-13 073829" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-08-13 073829.png" />
 - 我们接下来再把要上传的代码复制到这个文件夹
 - 8
 - 在git里输入git add .（注意这里字母和.之间有一个空格）
