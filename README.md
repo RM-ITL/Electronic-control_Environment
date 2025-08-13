@@ -146,7 +146,7 @@
 
 ## 五、Git使用和上传代码到github
 - 首先在github里创建一个代码仓库
-- <img width="430" height="400" alt="Snipaste_2025-08-13_07-30-27" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-30-27.png" />
+- <img width="430" height="450" alt="Snipaste_2025-08-13_07-30-27" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-30-27.png" />
 - 点击New后我们可以看到这样的界面，先填入你仓库名字，再给一些介绍，选择仓库是否对外开放（一般选择Public）,是否添加阅读文件（这里我们选择是），是否选择仓库模板(这里我们不选择)，是否选择开源协议（这里我也不选择），然后点击Create repository创建仓库
 - 2
 - 创建完后我们可以看到这样的页面
