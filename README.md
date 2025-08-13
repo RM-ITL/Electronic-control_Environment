@@ -112,7 +112,7 @@
 - 我们可以看到错误已经被自动修改（这其实也不能说是完全意义上的错误修改，而且自动适应当前工程，它只会去看芯片名和工程名是不是与当前一致，别的错误不会改）
 - 此时让我们再看到左下角几个按键，下图是它对应的作用，其中configure生成工程后只需要按一次就可以了，后面不需要重复使用，除非你把build文件夹删了
 - <img width="423" height="326" alt="Snipaste_2025-08-08_16-29-53" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-29-53.png" />
-- 现在我依次点击configure,build,flask(dap)进行工程的配置，编译，烧录
+- 现在我依次点击configure,build,flash(dap)进行工程的配置，编译，烧录
 - 配置完后会多一个build文件夹
 - <img width="113" height="177" alt="Snipaste_2025-08-08_16-33-41" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-33-41.png" />
 - 最后可以看到此时已经成功烧录，妙板点灯成功
@@ -144,6 +144,47 @@
 -如果我想要进行动态显示，只需要把r加入下面的cortex live watch里，我把断点取消，你会看到r一直在改变
 - <img width="379" height="363" alt="Snipaste_2025-08-08_16-54-52" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-54-52.png" />
 
+## 五、Git使用和上传代码到github
+- 首先在github里创建一个代码仓库
+- 1
+- 点击New后我们可以看到这样的界面，先填入你仓库名字，再给一些介绍，选择仓库是否对外开放（一般选择Public）,是否添加阅读文件（这里我们选择是），是否选择仓库模板(这里我们不选择)，是否选择开源协议（这里我也不选择），然后点击Create repository创建仓库
+- 2
+- 创建完后我们可以看到这样的页面
+- 3
+- 我们点击右上角的Code，复制仓库链接
+- 4
+- 接下来我们在本地创建一个文件夹用来放上传仓库的文件
+- 5
+- 我们进入文件夹，点击鼠标右键选择显示更多选项，然后点击Open Git Bash here，在git里输入git init，然后回车（后面所有指令输入完都是回车运行）
+- 6
+- 然后我们可以看到生成了一个.git文件，看不到的点击查看，打开显示，选择隐藏的项目
+- 7
+- 我们接下来再把要上传的代码复制到这个文件夹
+- 8
+- 在git里输入git add .（注意这里字母和.之间有一个空格）
+- 9
+- 运行完指令后，输入git commit -m "第一次上传代码"，""这里面的内容可以自己随便填写，一般填写的是上传代码更新的内容
+- 10
+- 运行完后，我们再输入git branch -M main
+- 11
+- 运行完后，我再输入git remote add origin + 你刚刚复制的链接（这里的粘贴只能通过鼠标右键，ctrl+v没用）
+- 12
+- 运行完后，我们再输入git push -u origin main,上传代码到仓库
+- 13
+- 然后运行完我们可以看到报错了，这是因为两个仓库内容不一致（因为我们创建仓库时，生成了README.md文件，本地没有）
+- 14
+- 这里我们输入git pull origin main --allow-unrelated-histories，进行历史版本合并
+- 15
+- 运行完后，会进入这样的界面，我们按一下键盘上的 Esc 键，输入（:wq），按回车，保存并退出。
+- 16
+- 最后我们再输入git push origin main 即可上传代码
+- 17
+- 我们来到网址上刚刚创建的代码仓库，刷新可以看到，上传的代码已经在这里了
+- 18
+- 如果我们的代码仓库有内容更新了，我们想让本地的也进行更新，可以打开本地的文件夹，一样是Open Git Bash here, 输入git pull origin main
+- 19
+- 此时我们可以看到我们的文件已经更新了
+- 20
 ## 五、写在最后
 - jlink烧录和下载已经更新
 - 用别人工程前先把他的build文件夹删除，重新生成，不然会出现路径错误问题
