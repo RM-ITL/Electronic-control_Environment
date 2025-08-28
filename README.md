@@ -189,6 +189,7 @@
 - <img width="470" height="450" alt="Snipaste_2025-08-13_07-55-33" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-55-33.png" />
 
 ## 六、更新
+更新串口重定向打印浮点数功能，需要把CMake.txt文件里的串口重定义打印浮点数代码复制到CMakeLists.txt最后。
 
 ## 七、写在最后
 - jlink烧录和下载已经更新
