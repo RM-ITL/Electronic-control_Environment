@@ -13,7 +13,7 @@
 - [三、工具使用](#三工具使用)
 - [四、调试](#四调试)
 - [五、写在最后](#五写在最后)
-- [六、更新：Git使用和上传代码到github](#六更新git使用和上传代码到github)
+- [六、Git使用和上传代码到github](#六git使用和上传代码到github)
 ...
 
 ## 一、开发工具
@@ -143,7 +143,7 @@
 -如果我想要进行动态显示，只需要把r加入下面的cortex live watch里，我把断点取消，你会看到r一直在改变
 - <img width="379" height="363" alt="Snipaste_2025-08-08_16-54-52" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-54-52.png" />
 
-## 六、更新：Git使用和上传代码到github
+## 六、Git使用和上传代码到github
 - 首先在github里创建一个代码仓库
 - <img width="430" height="450" alt="Snipaste_2025-08-13_07-30-27" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-30-27.png" />
 - 点击New后我们可以看到这样的界面，先填入你仓库名字，再给一些介绍，选择仓库是否对外开放（一般选择Public）,是否添加阅读文件（这里我们选择是），是否选择仓库模板(这里我们不选择)，是否选择开源协议（这里我也不选择），然后点击Create repository创建仓库
