@@ -12,9 +12,10 @@
 - [二、环境搭建](#二环境搭建)
 - [三、工具使用](#三工具使用)
 - [四、调试](#四调试)
-- [五、写在最后](#五写在最后)
-- [六、Git使用和上传代码到github](#六git使用和上传代码到github)
-...
+- [五、Git使用和上传代码到github](#五git使用和上传代码到github)
+- [六、更新](#六更新)
+- [七、写在最后](#七写在最后)
+
 
 ## 一、开发工具
 
@@ -124,7 +125,7 @@
 - 我现在就自己添加了一个BSP文件夹和bsp_led.c和bsp_led.h文件，所以我的这里需要做相应改变，如下图
 - <img width="472" height="314" alt="Snipaste_2025-08-08_16-38-33" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-38-33.png" />
 
-### 已更新jlink烧录和调试
+### jlink烧录和调试
 - 需要将更新后的.vscode文件夹、flash.jlink和update_config.sh下载好复制到工程里同时flash.jlink里jlink工具的位置路径需要改为自己电脑里的，然后你还需要在主CMakeLists.txt的最后加上CMake.txt文件里的一段话，否则将无法烧录
 - <img width="490" height="300" alt="Snipaste_2025-08-09_08-47-28" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-09_08-47-28.png" />
 
@@ -143,7 +144,7 @@
 -如果我想要进行动态显示，只需要把r加入下面的cortex live watch里，我把断点取消，你会看到r一直在改变
 - <img width="379" height="363" alt="Snipaste_2025-08-08_16-54-52" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-08_16-54-52.png" />
 
-## 六、Git使用和上传代码到github
+## 五、Git使用和上传代码到github
 - 首先在github里创建一个代码仓库
 - <img width="430" height="450" alt="Snipaste_2025-08-13_07-30-27" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-30-27.png" />
 - 点击New后我们可以看到这样的界面，先填入你仓库名字，再给一些介绍，选择仓库是否对外开放（一般选择Public）,是否添加阅读文件（这里我们选择是），是否选择仓库模板(这里我们不选择)，是否选择开源协议（这里我也不选择），然后点击Create repository创建仓库
@@ -186,7 +187,10 @@
 - <img width="470" height="450" alt="Snipaste_2025-08-13_07-55-02" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-55-02.png" />
 - 此时我们可以看到我们的文件已经更新了
 - <img width="470" height="450" alt="Snipaste_2025-08-13_07-55-33" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-08-13_07-55-33.png" />
-## 五、写在最后
+
+## 六、更新
+
+## 七、写在最后
 - jlink烧录和下载已经更新
 - 用别人工程前先把他的build文件夹删除，重新生成，不然会出现路径错误问题
 - 因为我也刚学不久，有些地方可能有bug或不足，欢迎及时和我反馈QQ:3305708832
