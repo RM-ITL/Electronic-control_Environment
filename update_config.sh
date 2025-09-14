@@ -16,7 +16,8 @@ get_project_info() {
     
     if [ -z "$IOC_FILE" ]; then
         echo "未找到.ioc文件，使用默认配置"
-        PROJECT_NAME=$(basename "$SCRIPT_DIR")
+        # 从CMakeLists.txt中获取项目名称
+        get_project_name_from_cmake
         CHIP_SERIES="stm32h7"
         # 从CMakeLists.txt中获取正确的芯片定义
         get_chip_define_from_cmake
@@ -33,9 +34,8 @@ get_project_info() {
     
     echo "芯片型号: $CHIP_FULL_NAME"
     
-    # 提取项目名称（使用目录名）
-    PROJECT_NAME=$(basename "$SCRIPT_DIR")
-    echo "项目名称: $PROJECT_NAME"
+    # 从CMakeLists.txt中获取项目名称（总是使用CMakeLists.txt中的项目名称）
+    get_project_name_from_cmake
     
     # 从完整芯片型号中提取系列
     if [[ $CHIP_FULL_NAME =~ STM32([A-Z][0-9]) ]]; then
@@ -48,6 +48,24 @@ get_project_info() {
     
     # 从CMakeLists.txt中获取正确的芯片定义
     get_chip_define_from_cmake
+}
+
+# 从CMakeLists.txt中获取项目名称
+get_project_name_from_cmake() {
+    CMAKE_FILE="$SCRIPT_DIR/CMakeLists.txt"
+    
+    if [ -f "$CMAKE_FILE" ]; then
+        PROJECT_NAME=$(grep -E "set\(CMAKE_PROJECT_NAME" "$CMAKE_FILE" | cut -d ' ' -f 2 | tr -d ')')
+        if [ -n "$PROJECT_NAME" ]; then
+            echo "从CMakeLists.txt中提取项目名称: $PROJECT_NAME"
+        else
+            echo "在CMakeLists.txt中未找到项目名称，使用目录名"
+            PROJECT_NAME=$(basename "$SCRIPT_DIR")
+        fi
+    else
+        echo "未找到CMakeLists.txt，使用目录名"
+        PROJECT_NAME=$(basename "$SCRIPT_DIR")
+    fi
 }
 
 # 从CMakeLists.txt中获取芯片定义
@@ -231,7 +249,8 @@ update_tasks_json() {
     
     # 更新可执行文件路径
     ELF_PATH="./build/${PROJECT_NAME}.elf"
-    sed -i "s|program \./build/[A-Za-z0-9_-]\+\.elf|program $ELF_PATH|g" "$TASKS_FILE"
+    # 修复正则表达式，正确匹配并替换程序路径
+    sed -i "s|program \./build/[A-Za-z0-9_.-]\+\.elf|program $ELF_PATH|g" "$TASKS_FILE"
     
     # 显示更新后的内容
     echo "更新后的目标配置:"
@@ -243,7 +262,6 @@ update_tasks_json() {
     echo "已更新 $TASKS_FILE 中的目标配置为 $TARGET_CFG"
     echo "已更新 $TASKS_FILE 中的可执行文件路径为 $ELF_PATH"
 }
-
 # 主函数
 main() {
     echo "开始更新VS Code配置文件..."
