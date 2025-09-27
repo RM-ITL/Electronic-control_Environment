@@ -191,9 +191,17 @@
 
 ## 六、ozone调试
 - 去网上下载ozoneV3.24版本
-- 打开ozone，板子连上电脑
-- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-09-27_16-36-13.png" />
-
+- 打开ozone，板子连上电脑，按下面教程操作
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-09-27_16-36-13.png" />
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-09-27_16-37-37.png" />
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-09-27_16-37-57.png" />
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-09-27_16-38-39.png" />
+- 烧录程序
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-09-27_16-38-56.png" />
+- 运行程序
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/屏幕截图 2025-09-27_16-40-07.png" />
+- 添加调试变量
+- 
 
 ## 七、更新
 更新串口重定向打印浮点数功能，需要把CMake.txt文件里的串口重定义打印浮点数代码复制到CMakeLists.txt最后。
