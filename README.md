@@ -191,8 +191,8 @@
 
 ## 六、ozone调试
 - 去网上下载ozoneV3.24版本
-- 打开
-- 
+- 打开ozone，板子连上电脑
+- <img width="470" height="450" alt="Snipaste_2025-08-13_07-52-45" src="https://github.com/RM-ITL/Electronic-control_Environment/blob/main/images/Snipaste_2025-09-27_16-36-13.png" />
 
 
 ## 七、更新
